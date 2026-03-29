@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "OpenBB REST API",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "uvicorn", "openbb_core.api.rest_api:app", "--host", "127.0.0.1", "--port", "6900", "--reload"],
+      "port": 6900
+    },
+    {
+      "name": "Desktop Vite Dev Server",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 1470
+    }
+  ]
+}
